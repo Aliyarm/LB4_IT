@@ -7,7 +7,7 @@ namespace LB4_IT
         static void Main(string[] args)
         {
             int[,] matrix = new int[5, 6];
-            Random ran = new Random();
+            Random ran = new();
 
             for (int i = 0; i < 5; i++)
             {
@@ -19,13 +19,22 @@ namespace LB4_IT
                 Console.WriteLine();
             }
             Console.WriteLine();
+
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 6; j += 2)
+                {
+                    Console.Write("{0}\t", matrix[i, j]);
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
             int count = 0;
             for (int i = 0; i < 5; i++)
             {
-                for (int j = 0; j < 6; j++)
+                for (int j = 0; j < 6; j += 2)
                 {
-                    if (j % 2 == 0)
-                    {
                         int mod = matrix[i, j] % (j + 1);
                         if (mod != 0)
                         {
@@ -33,10 +42,10 @@ namespace LB4_IT
                             count++;
                         }
                         Console.Write("{0}\t", matrix[i, j]);
-                    }
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
             Console.WriteLine("Количество изменённых элементов: " + count);
         }
     }
