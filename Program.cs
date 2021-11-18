@@ -20,6 +20,7 @@ namespace LB4_IT
             }
             Console.WriteLine();
 
+            Console.WriteLine("Все нечётные стоблцы: ");
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 6; j += 2)
@@ -33,7 +34,7 @@ namespace LB4_IT
             int count = 0;
             for (int i = 0; i < 5; i++)
             {
-                for (int j = 0; j < 6; j += 2)
+                for (int j = 0; j < 6; j +=2)
                 {
                         int mod = matrix[i, j] % (j + 1);
                         if (mod != 0)
