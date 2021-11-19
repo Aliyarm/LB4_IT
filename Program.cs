@@ -20,7 +20,7 @@ namespace LB4_IT
             }
             Console.WriteLine();
 
-            Console.WriteLine("Все нечётные стоблцы: ");
+            Console.WriteLine("Все нечётные стоблцы:");
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 6; j += 2)
