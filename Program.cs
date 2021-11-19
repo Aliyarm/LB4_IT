@@ -8,7 +8,7 @@ namespace LB4_IT
         {
             int[,] matrix = new int[5, 6];
             Random ran = new();
-            // создание массива с размерномтью [5, 6]
+            // создание массива с размерностью [5, 6]
 
             for (int i = 0; i < 5; i++)
             {
@@ -50,5 +50,6 @@ namespace LB4_IT
             Console.WriteLine();
             Console.WriteLine("Количество изменённых элементов: " + count);
         }
+
     }
 }
